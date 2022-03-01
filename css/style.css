@@ -1,0 +1,339 @@
+/* CONFIGURACION PARA TODO EL DOCUMENTO */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #e2e9e1; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: beige;
+}
+/* CABECERA - MENU DEL HEADER */
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    
+}
+.logo{
+    background-color: rgb(132, 132, 214);
+    border: 1px solid red;
+}
+.header-logo{
+    width: 200px;
+}
+.nav-navigation{
+    list-style-type: none;
+}
+.navigation__lista{
+    display: inline;
+    margin-left: 15px;
+}
+nav{
+    background-color: rgb(158, 146, 146);
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-slider{
+    grid-column: 1 / 3;
+    grid-row: 2 / 2 ;
+    background-image: url("../img/img-slider-02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #31afc0;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+/* CONTENIDO PRINCIPAL */
+.container{
+    /* background-color: #cccccc; */
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    
+}
+
+/* SECCION  - BIENVENIDA */
+
+/* CLASE PARA QUITAR ENLACE */
+.no_link{
+    list-style: none;
+    text-decoration: none;
+}
+.welcome{
+    background-color: rgb(146, 33, 33);
+    margin-top: 20px;
+    display: flex;
+    /* grid-template-columns: 60% 40%; */
+
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.welcome__presentacion{
+    background-color: rgb(231, 227, 227);
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+
+.welcome__share{
+    background-color: beige;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* SECCION - SERVICIOS */
+
+.services{
+    margin-top: 50px;
+}
+.services__title{
+    background-color: aqua;
+    text-align: center;
+}
+.box__services{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #dddddd;
+    display: flex;
+    gap: 5px;
+}
+.services-card{
+    background-color: #ccb192;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* SECCION - PROCESOS */
+.procesos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.procesos__title{
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.procesos__img{
+    width: 250px;
+}
+.procesos__cards-box{
+    background-color:#dddddd;
+    padding: 10px;
+    border-radius: 15px;
+}
+.procesos-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* SECCION - PROCESOS - LOGOS EMPRESAS */
+.procesos-logos-empre{
+    margin-top: 30px;
+    background-color: red;
+    text-align: center;
+    border-radius: 20px;
+}
+.procesos__logos-img{
+    width: 200px;
+    display: inline-block;
+    margin-left: 10px;
+}
+/* SECCION - UBICANOS */
+.ubicanos{
+    margin-bottom: 50px;
+}
+.ubicanos__title{
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.maps{
+    display: flex;
+    background-color: #dddddd;
+}
+.ubicanos-maps{
+    width: 50%;
+    margin-right: 5px;
+}
+.ubicanos__img{
+    width: 50%;
+}
+
+.contact__title{
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+/* SECCION - CONTACTO */
+
+.formulario{
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+form{
+    width: 80%;
+    margin: auto;
+    background-color: #475486;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact-btn-enviar{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* SECCION - FOOTER */
+.container-footer{
+    background-color: #9E9292;
+    padding: 20px;
+}
+.footer__title{
+    text-align: center;
+}
+.footer__copý{
+    text-align: center;
+}
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1000px) {
+    
+    /* SECCION DE BIENVENIDA */
+    .container{
+        width: 100%;
+    }
+    .welcome {
+        grid-template-columns: 50% 50%;
+        width: 90%;
+    }
+
+    /* SECCION DE SERVICIOS */
+    .welcome__share{
+        width: 100;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    
+    /* SECCION DE BIENVENIDA */
+    .container{
+        width: 100%;
+    }
+    .welcome {
+        grid-template-columns: 50% 50%;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 715px) {
+    
+    /* SECCION DE BIENVENIDA */
+    .container{
+        width: 100%;
+    }
+    .welcome {
+        grid-template-columns: 50% 50%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    /* SECCION DE BIENVENIDA */
+    .container{
+        width: 100%;
+    }
+    .welcome {
+        grid-template-columns: 50% 50%;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 490px) {
+
+    /* SECCION DE BIENVENIDA */
+    .container{
+        width: 400px;
+    }
+    .welcome {
+        grid-template-columns: 300px;
+        width: 400px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* SECCION SERVICIOS */
+    .box__services{
+        flex-direction: column;
+    }
+
+    /* SECCION PROCESOS */
+    .procesos-card{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* SECCION - PROCESOS - LOGOS EMPRESAS */
+    .procesos-logos-empre{
+        padding: 15px;
+    }
+    .procesos__logos-img{
+        margin-bottom: 15px;
+    }
+
+    /* SECCION - UBICANOS */
+    .maps{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ubicanos__img{
+        width: 100%;
+    }
+    .ubicanos-maps{
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    /* SECCION - CONTACTO */
+    form{
+        width: 100%;
+    }
+}

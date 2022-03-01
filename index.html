@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AGRAGANDO TIPO DE LETRAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- AGREGANDO EL ARCHIVO DE ESTILOS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>MYD - Agencia Aduanera</title>
+</head>
+<body>
+        <!-- CABECERA - MENU DE NAVEGACION -->
+        <header id="cabecera">
+            <nav>
+                <div class="logo">
+                    <a href="">
+                        <img class="header-logo" src="img/logo.png" alt="Logo Empresa">
+                    </a>
+                </div>
+                <div class="listas">
+                    <ul class="nav-navigation">
+                        <li class="navigation__lista"><a class="navigation-link" href="#">INICIO</a></li>
+                        <li class="navigation__lista"><a class="navigation-link" href="#servicios">SERVICIOS</a></li>
+                        <li class="navigation__lista"><a class="navigation-link" href="#procesos">PROCESOS</a></li>
+                        <li class="navigation__lista"><a class="navigation-link" href="#ubicanos">UBICANOS</a></li>
+                        <li class="navigation__lista"><a class="navigation-link" href="#contacto">CONTACTO</a></li>
+                    </ul>    
+                </div>
+            </nav>
+            <div class="header-slider">
+                <!-- <img class="header__img" src="img/img01-slider-02.jpg" alt=""> -->
+            </div>
+        </header>
+        <!-- MAIN CONTENIDO PRINCIPAL - SECCION DE MENSAJE DE BIENVENIDA -->
+        <main class="container">
+            <section class="welcome">
+                <div class="welcome__presentacion">
+                    <h1 class="welcome__title"><a class="welcome__title-link no_link" href="#"> Agencia de Aduanas M & D</a></h1>
+                    <hr>
+                    <p class="welcome__presentation-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam beatae provident est iure obcaecati odio deleniti molestias odit, doloribus accusamus.</p>
+                </div>
+                <div class="welcome__share">
+                    <h2 class="share__title">Comparte</h2>
+                    <hr>
+                    <img class="comparte" src="img/comparte.jpg" alt="">
+                    <p>+51 7120165 </p>
+                    <p>+51 7120165 </p>
+                </div>
+            </section>
+            <!-- DIV DE ANCLA DE LA SECCION SERVICIOS -->
+            <div id="servicios">
+            </div>
+            <!-- SECCION DE SERVICIOS - CARDS LISTA DE SERVICIOS -->
+            <section  class="services">
+                <h2 class="services__title"><a  class="services__title-link no_link" href="#">SERVICIOS</a></h2>
+                <div class="box__services">
+                    <div class="services-card">
+                        <img class="services__img" src="img/img-card01.jpg" alt="">
+                        <h3 class="title">EXPORTACION DE MERCANCIAS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis debitis incidunt illo doloribus placeat repellendus illum magnam libero fugit nesciunt.</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services__img" src="img/img-card02.jpg" alt="">
+                        <h3 class="title">EXPORTACION DE MERCANCIAS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis debitis incidunt illo doloribus placeat repellendus illum magnam libero fugit nesciunt.</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services__img" src="img/img-card03.jpg" alt="">
+                        <h3 class="title">EXPORTACION DE MERCANCIAS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis debitis incidunt illo doloribus placeat repellendus illum magnam libero fugit nesciunt.</p>
+                    </div>
+                </div>
+
+                <!-- DIV DE ANCLA DE LA SECCION PROCESOS -->
+                <div class="divicion" id="procesos"></div>
+            </section>
+
+            <!-- SECCION DE ṔROCESOS - CARDS LISTA DE PROCESOS -->
+            <div class="divicion" id="procesos"></div>
+            <section class="procesos">
+                <h2  class="procesos__title"><a class="procesos__title-link" href="#">PROCESOS</a></h2>
+                <div class="procesos__cards-box">
+                    <div class="procesos-card">
+                        <img class="procesos__img" src="img/img-procesos-card01.jpg" alt="">
+                        <p class="procesos__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quam minima magni voluptate expedita molestias ut similique quibusdam qui possimus.</p>
+                    </div>
+                    <div class="procesos-card">
+                        <img class="procesos__img" src="img/img-procesos-card02.png" alt="">
+                        <p class="procesos__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quam minima magni voluptate expedita molestias ut similique quibusdam qui possimus.</p>
+                    </div>
+                </div>
+                <div class="procesos-logos-empre">
+                    <!-- DIV DE ANCLA DE LA SECCION UBICANOS -->
+                    <div class="divicion" id="ubicanos"></div>
+
+                    <img class="procesos__logos-img" src="img/img-empresas/img01-empre.jpg" alt="">
+                    <img class="procesos__logos-img"  src="img/img-empresas/img02-empre.jpg" alt="">
+                    <img class="procesos__logos-img"  src="img/img-empresas/img03-empre.jpg" alt="">
+                </div>     
+            </section>
+
+            <!-- SECCION DE UBICANOS - IFRAME -->
+            <section class="ubicanos">
+                <h2  class="ubicanos__title"><a class="ubicanos__title-link" href="#">UBICANOS</a></h2>
+                <div class="maps">
+                    <div class="ubicanos-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.824043806973!2d-77.1043358882514!3d-12.024336303732717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cdf40f60be19%3A0x328e9cfb200fd334!2sCentro%20Aereo%20Comercial!5e0!3m2!1ses-419!2spe!4v1646025041791!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                <!-- SECCION DE UBICANOS - IMAGEN DE UBICACION -->
+                    <img class="ubicanos__img" src="img/img-ubicaciOn.jpg" alt="">
+
+                </div>
+                <p class="container-services-text">CENTRO AEREO</p>
+                <p class="container-services-text">COMERCIAL OFICINA 306-E,</p>
+                <p class="container-services-text">FRENTE A LA ADUANA AEREA DEL CALLAO</p>
+
+            </section>
+
+            <!-- SECCION CONTACTO - FORMULARIO -->
+            <section class="contact">
+                <h2 id="contacto" class="contact__title"><a class="contact__title-link" href="#">CONTACTO</a></h2>
+                <div class="formulario">
+                    <form action="">
+                        <!-- <label for="txt-nombre">Nombre :</label> -->
+                        <input id="txt-nombre" type="text" placeholder="Ingrese su nombre aqui">
+                        
+                        <!-- <label for="txt-mail">Correo :</label> -->
+                        <input id="txt-mail" type="email" placeholder="Ingrese su correo aqui">
+                        
+                        <!-- <label for="txt-phone">Telefono :</label> -->
+                        <input id="txt-phone" type="number" placeholder="Ingrese su numero telefonico aqui">
+                        
+                        <!-- <label for="txt-asunto">Asunto :</label> -->
+                        <input id="txt-asunto" type="text" placeholder="Ingrese Asunto">
+                        
+                        <!-- <label for="txt-asunto">Mensaje :</label> -->
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese su consulta"></textarea>
+                        
+                        <button class="contact-btn-enviar">Enviar</button>
+                    </form>
+                </div>
+            </section>  
+        </main>
+
+        <!-- SECCION FOOTER - FOOTER DE WEB -->
+        <footer class="container-footer">
+            <h4 class="footer__title">M yD Agencia Aduanas</h4>
+
+            <div class="footer-socialMedias">
+                <h5>Follow us on</h5>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="navegacion">
+                <ul class="footer-navegacion">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">PROCESOS</a></li>
+                    <li><a href="#">UBICANOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <h5 class="footer__copý">copyright © - 2022 - Lima Peru</h5>
+            </footer>
+</body>
+</html>
