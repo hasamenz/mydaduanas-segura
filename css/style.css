@@ -30,8 +30,18 @@ header{
 }
 .navigation__lista{
     display: inline;
+    font-weight: 400;
+    font-size: 15px;
     margin-left: 15px;
+    transition: font-weight 7s, font-size 5s;
 }
+/* TRANSICION */
+.navigation__lista:hover{
+    font-weight: 600;
+    font-size: 25px;
+    background-color: #e9e3e37a;    
+}
+
 nav{
     background-color: rgb(158, 146, 146);
     grid-column: 1 / 3;
@@ -60,6 +70,7 @@ nav{
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+    background-image: linear-gradient(to top, #cd7e2949 , #fdd8abbd);
     
 }
 
@@ -86,7 +97,22 @@ nav{
     background-color: rgb(231, 227, 227);
     border-radius: 10px;
     margin-right: 10px;
-    
+}
+.welcome__title{
+    font-size: 25px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein {
+    from {
+        font-size: 25px;
+        
+    }
+
+    to {
+        font-size: 26px;
+    }
 }
 
 .welcome__share{
@@ -117,8 +143,18 @@ nav{
 }
 .services-card{
     background-color: #ccb192;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
     border-radius: 10px;
+    transition: background-color 2s, padding 2s;
+}
+/* TRANSICION */
+.services-card:hover{
+    background-color: #dacdbe;
+    padding: 15px;
+
 }
 
 /* SECCION - PROCESOS */
@@ -337,3 +373,7 @@ textarea{
         width: 100%;
     }
 }
+
+/* ANIMACIONES */
+
+
