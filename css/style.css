@@ -25,6 +25,7 @@ header{
 .header-logo{
     width: 200px;
 }
+/* MENU DE NAVEGACION */
 .nav-navigation{
     list-style-type: none;
 }
@@ -53,25 +54,22 @@ nav{
 .header-slider{
     grid-column: 1 / 3;
     grid-row: 2 / 2 ;
-    background-image: url("../img/img-slider-02.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("../img/img-slider-02.jpg"); */
+    /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #31afc0;
     width: 100%;
-    height: 500px;
-    
-    
+    height: 500px; */
 }
 /* CONTENIDO PRINCIPAL */
 .container{
     /* background-color: #cccccc; */
-    display: grid;
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
     background-image: linear-gradient(to top, #cd7e2949 , #fdd8abbd);
-    
+    padding-top: 20px;
 }
 
 /* SECCION  - BIENVENIDA */
@@ -81,35 +79,35 @@ nav{
     list-style: none;
     text-decoration: none;
 }
+/* SECCION DE BIENVENIDA */
 .welcome{
     background-color: rgb(146, 33, 33);
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     /* grid-template-columns: 60% 40%; */
-
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 10px;
     padding: 10px;
-    
 }
 .welcome__presentacion{
     background-color: rgb(231, 227, 227);
     border-radius: 10px;
     margin-right: 10px;
 }
+
 .welcome__title{
     font-size: 25px;
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: infinite;
+    margin-left: 5px;
 }
+
 @keyframes slidein {
     from {
-        font-size: 25px;
-        
+        font-size: 25px;   
     }
-
     to {
         font-size: 26px;
     }
@@ -125,7 +123,6 @@ nav{
 }
 
 /* SECCION - SERVICIOS */
-
 .services{
     margin-top: 50px;
 }
@@ -154,7 +151,6 @@ nav{
 .services-card:hover{
     background-color: #dacdbe;
     padding: 15px;
-
 }
 
 /* SECCION - PROCESOS */
@@ -185,7 +181,7 @@ nav{
 /* SECCION - PROCESOS - LOGOS EMPRESAS */
 .procesos-logos-empre{
     margin-top: 30px;
-    background-color: red;
+    background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
 }
@@ -219,20 +215,22 @@ nav{
     background-color: aqua;
     text-align: center;
     margin-bottom: 30px;
-    
 }
 
 /* SECCION - CONTACTO */
 
 .formulario{
     background-color: azure;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
+    display: flex;  
+    justify-content: center;
 }
 form{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    
     background-color: #475486;
     padding: 20px;
     width: 40%;
@@ -267,23 +265,40 @@ textarea{
     text-align: center;
 }
 
-
 /* MEDIA QUERYS */
-
 @media screen and (max-width: 1000px) {
+    
+    /* SECCION DE SERVICIOS */
+    .box__services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-card{
+        align-items: center;
+        width: 80%;
+    }
+    .services__img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 870px) {
     
     /* SECCION DE BIENVENIDA */
     .container{
         width: 100%;
     }
     .welcome {
-        grid-template-columns: 50% 50%;
-        width: 90%;
+        /* grid-template-columns: 50% 50%; */
+        width: 100%;
     }
 
     /* SECCION DE SERVICIOS */
     .welcome__share{
         width: 100;
+    }
+    form{
+        width: 70%;
     }
 
 }
@@ -294,8 +309,11 @@ textarea{
         width: 100%;
     }
     .welcome {
-        grid-template-columns: 50% 50%;
-        width: 80%;
+        /* grid-template-columns: 50% 50%; */
+        width: 100%;
+    }
+    form{
+        width: 90%;
     }
 }
 @media screen and (max-width: 715px) {
@@ -304,10 +322,10 @@ textarea{
     .container{
         width: 100%;
     }
-    .welcome {
-        grid-template-columns: 50% 50%;
-        width: 70%;
+    form{
+        width: 80%;
     }
+    
 }
 
 @media screen and (max-width: 590px) {
@@ -316,10 +334,7 @@ textarea{
     .container{
         width: 100%;
     }
-    .welcome {
-        grid-template-columns: 50% 50%;
-        width: 70%;
-    }
+    
 }
 @media screen and (max-width: 490px) {
 
