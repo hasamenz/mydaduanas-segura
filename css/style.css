@@ -16,7 +16,6 @@ header{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    
 }
 .logo{
     background-color: rgb(132, 132, 214);
@@ -70,6 +69,7 @@ nav{
     max-width: 1200px;
     background-image: linear-gradient(to top, #cd7e2949 , #fdd8abbd);
     padding-top: 20px;
+    padding-bottom: 1px;
 }
 
 /* SECCION  - BIENVENIDA */
@@ -103,7 +103,7 @@ nav{
     animation-iteration-count: infinite;
     margin-left: 5px;
 }
-
+/* ANIMACION BARRA INICIO */
 @keyframes slidein {
     from {
         font-size: 25px;   
@@ -129,6 +129,12 @@ nav{
 .services__title{
     background-color: aqua;
     text-align: center;
+}
+/* ANIMACION TITULO SERIVICIOS */
+.services__title:hover{
+    
+    animation: pulse;
+    animation-duration: 2s;
 }
 .box__services{
     margin-top: 30px;
@@ -254,15 +260,14 @@ textarea{
 }
 
 /* SECCION - FOOTER */
-.container-footer{
-    background-color: #9E9292;
-    padding: 20px;
+footer{
+    width: 100%;
+    background-color: rgba(100, 86, 86, 0.274);
+    padding-top: 50px;
+    overflow-x: hidden;
 }
-.footer__title{
-    text-align: center;
-}
-.footer__copý{
-    text-align: center;
+.footer__copy{
+    background-color: rgba(102, 34, 34, 0.05);
 }
 
 /* MEDIA QUERYS */
@@ -343,12 +348,15 @@ textarea{
         width: 400px;
     }
     .welcome {
-        grid-template-columns: 300px;
-        width: 400px;
+        grid-template-columns: 280px;
+        width: 375px;
         margin-bottom: 30px;
         flex-direction: column;
         gap: 20px;
         justify-content: center;
+    }
+    .welcome__title{
+        
     }
 
     /* SECCION SERVICIOS */
@@ -390,5 +398,9 @@ textarea{
 }
 
 /* ANIMACIONES */
-
+@keyframes mover{
+    0%{
+        transform: translate(50%);
+    }
+}
 
