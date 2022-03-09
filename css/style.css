@@ -270,6 +270,19 @@ footer{
     background-color: rgba(102, 34, 34, 0.05);
 }
 
+/* SECCION BOTON IR ARRIBA */
+.btn__arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    font-size: 40px;
+    color: #2C408D;
+}
+#btn-arriba-link{
+    
+}
+
 /* MEDIA QUERYS */
 @media screen and (max-width: 1000px) {
     
@@ -390,7 +403,6 @@ footer{
         width: 100%;
         margin-right: 5px;
     }
-
     /* SECCION - CONTACTO */
     form{
         width: 100%;

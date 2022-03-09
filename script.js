@@ -15,3 +15,21 @@ window.addEventListener('scroll', function(){
             cardAnimar.style.animation = `mover 2s ease-out`
     }
 })
+
+// FUNCION PARA BOTON DE IR ARRIBA
+
+function irArriba(){
+    window.addEventListener('scroll',()=>{
+        let scrool = document.documentElement.scrollTop;
+        console.log(scrool)
+
+        let irArriba = document.getElementById('btn-arriba-link')
+        if (scrool > 1100 ) {
+            irArriba.style.visibility = "visible"
+        }
+        else{
+            irArriba.style.visibility = "hidden"
+        }
+    })
+}
+irArriba();
