@@ -1,0 +1,14 @@
+$colorSecundario: #CE802A;
+$colorPrimario: #2C408D;
+
+.numero{
+    color: blue;
+    background-color: purple;
+    &:hover{
+        color: red;
+    }
+}
+.resaltar{
+    color: $colorSecundario;
+}
+

@@ -279,9 +279,6 @@ footer{
     font-size: 40px;
     color: #2C408D;
 }
-#btn-arriba-link{
-    
-}
 
 /* MEDIA QUERYS */
 @media screen and (max-width: 1000px) {
@@ -367,9 +364,6 @@ footer{
         flex-direction: column;
         gap: 20px;
         justify-content: center;
-    }
-    .welcome__title{
-        
     }
 
     /* SECCION SERVICIOS */

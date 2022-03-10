@@ -1,0 +1,8 @@
+.numero {
+  color: blue;
+  background-color: purple; }
+  .numero:hover {
+    color: red; }
+
+.resaltar {
+  color: #CE802A; }

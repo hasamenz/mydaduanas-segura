@@ -23,6 +23,7 @@ function irArriba(){
         let scrool = document.documentElement.scrollTop;
         console.log(scrool)
 
+        // HACER VISIBE O INVISIBLE EL BOTON AL HACER SCROOL
         let irArriba = document.getElementById('btn-arriba-link')
         if (scrool > 1100 ) {
             irArriba.style.visibility = "visible"
@@ -32,4 +33,5 @@ function irArriba(){
         }
     })
 }
+// EJECUTAR LA FUNCION
 irArriba();
