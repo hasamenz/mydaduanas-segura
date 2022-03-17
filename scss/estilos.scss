@@ -1,5 +1,17 @@
 $colorSecundario: #CE802A;
 $colorPrimario: #2C408D;
+$colorLetraTitulos : #2b3147;
+$colors: (
+    whatsapp:#55ee55
+    twitter: #55acee,
+    facebook:  #3a5795,
+    instagram: #C25E30
+);
+@each $name-color, $bgcolor in $colors {
+    .btn--#{$name-color} {
+        background-color: $bgcolor;
+    }
+}
 
 .numero{
     color: blue;
@@ -10,5 +22,9 @@ $colorPrimario: #2C408D;
 }
 .resaltar{
     color: $colorSecundario;
+}
+
+.services__title{
+    color: $colorLetraTitulos;
 }
 
